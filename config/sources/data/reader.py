@@ -1,3 +1,4 @@
+from ai.scoring import bewerte_hof, bewertung_text
 import json
 import os
 
@@ -23,7 +24,9 @@ def zeige_hoefe():
         print(f"Region: {hof['region']}")
         print(f"Preis: CHF {hof['preis']}")
         print(f"Grundstück: {hof['grundstueck_m2']} m²")
-        print(f"Bewertung: {hof['bewertung']}/100")
+        punkte = bewerte_hof(hof)
+print(f"Traumhof-Score: {punkte}/100")
+print(bewertung_text(punkte))
         print("------------------")
 
 
