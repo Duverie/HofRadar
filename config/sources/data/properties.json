@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Beispiel Hof",
+    "region": "Elsass",
+    "preis": 1200000,
+    "grundstueck_m2": 6000,
+    "pferdehaltung": true,
+    "einliegerwohnung": true,
+    "bewertung": 90
+  }
+]
