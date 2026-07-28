@@ -24,9 +24,11 @@ def zeige_hoefe():
         print(f"Region: {hof['region']}")
         print(f"Preis: CHF {hof['preis']}")
         print(f"Grundstück: {hof['grundstueck_m2']} m²")
+
         punkte = bewerte_hof(hof)
-print(f"Traumhof-Score: {punkte}/100")
-print(bewertung_text(punkte))
+        print(f"Traumhof-Score: {punkte}/100")
+        print(bewertung_text(punkte))
+
         print("------------------")
 
 
